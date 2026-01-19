@@ -1,54 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar">
-<head>
-    <meta charset="UTF-8">
-    <title>Shoma Dolla 💖</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ربط ملف CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- خلفية القلوب -->
-    <div class="hearts"></div>
-
-    <!-- كارت الترحيب -->
-    <div class="welcome-card" id="welcomeCard">
-        <h1>💌</h1>
-        <p>
-            Dloعty💖 <br>
-            بحبك يا شوما <br>
-            دوسي تحت عشان تدخلي 💕
-        </p>
-        <button onclick="start()">ادخلي يا دلوعتي 💖</button>
-    </div>
-
-    <!-- الفورم -->
-    <div class="form-card hidden" id="formCard">
-        <h2>💗 هشوفك لسه فاكرة ولا لاء 💗</h2>
-
-        <input type="text" id="nickname" placeholder="اسم دلعي الي بحبو؟">
-        <label for="">فاكرة امتي اتقابلنا؟</label>
-        <input type="date" id="date">
-        <textarea id="loveText" placeholder="بتحبيني قد اي( زي م فريده قالت )؟"></textarea>
-
-        <button onclick="checkData()">ابعتي يا حبيبتي 💘</button>
-
-        <p class="error" id="errorMsg"></p>
-    </div>
-
-    <!-- رسالة النجاح -->
-    <div class="success-card hidden" id="successCard">
-        <h1>💖</h1>
-        <p>
-           ❤️شوما بحبك قد البحر وسمكاتو <br>
-           💕شوما لو زعلتك ف يوم سامحني <br>
-           💖 شوما لو انا قصرت ف يوم انك تكون ليا متغلطيش نفس الغلطه عشان احنا نستاهل بعض اعمليها انت يا شوما
-        </p>
-    </div>
-
-    <!-- ربط ملف JS -->
-    <script src="script.js"></script>
-</body>
-</html>
