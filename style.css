@@ -1,0 +1,216 @@
+/* إعدادات عامة */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 20px;
+    direction: rtl; /* اتجاه عربي */
+}
+
+/* خلفية القلوب المتحركة */
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 85 C20 70 0 50 0 30 C0 10 20 0 30 0 C40 0 50 10 50 20 C50 10 60 0 70 0 C80 0 100 10 100 30 C100 50 80 70 50 85 Z" fill="%23ffc0cb" opacity="0.4"/></svg>');
+    background-size: 50px 50px;
+    animation: moveHearts 20s linear infinite;
+}
+
+@keyframes moveHearts {
+    0% { background-position: 0 0; }
+    100% { background-position: 100px 100px; }
+}
+
+/* الكروت الأساسية */
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #ffcad4;
+    transition: transform 0.3s ease;
+}
+
+h1, h2 {
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+.big-text {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ffcad4;
+    border-radius: 10px;
+    font-family: inherit;
+    outline: none;
+    text-align: right;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #e63946;
+}
+
+button {
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #d62828;
+}
+
+.hidden {
+    display: none;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* =========================================
+   تنسيق قسم المذكرات (Diary Section)
+   ========================================= */
+.diary-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid #e63946;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.diary-title {
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 2px dashed #ffcad4;
+    padding-bottom: 15px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.note-intro {
+    background-color: #fff0f3;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-style: italic;
+    border-right: 5px solid #e63946;
+}
+
+.diary-entry {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.diary-entry:last-child {
+    border-bottom: none;
+}
+
+.diary-entry h3 {
+    color: #d62828;
+    background: #ffe5ec;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.diary-entry p {
+    font-size: 1.05em;
+    color: #333;
+    white-space: pre-line;
+}
+
+/* صندوق مميز للكلام المهم عن الخطيب */
+.highlight-box {
+    background-color: #fffde7;
+    padding: 15px;
+    border-radius: 8px;
+    border-right: 4px solid #fbc02d;
+    margin-top: 10px;
+}
+
+/* الخاتمة المؤلمة */
+.final-entry {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.final-entry h3 {
+    background: #333;
+    color: #fff;
+}
+
+.signature {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #000;
+    font-size: 1.2em;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.love-repeat {
+    font-size: 1.5em;
+    color: #e63946;
+    margin: 5px 0;
+}
