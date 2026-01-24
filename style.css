@@ -17,7 +17,9 @@ body {
     padding: 20px;
     direction: rtl; /* اتجاه عربي */
 }
-
+a{
+        text-decoration: none;
+}
 /* خلفية القلوب المتحركة */
 .hearts {
     position: fixed;
@@ -213,4 +215,5 @@ button:hover {
     font-size: 1.5em;
     color: #e63946;
     margin: 5px 0;
+
 }
