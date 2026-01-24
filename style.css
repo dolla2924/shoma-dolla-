@@ -17,9 +17,25 @@ body {
     padding: 20px;
     direction: rtl; /* اتجاه عربي */
 }
-a{
-        text-decoration: none;
-}
+button, .btn-link {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.2s;
+            display: inline-block;
+            text-decoration: none;
+            font-family: inherit;
+        }
+
+        button:hover, .btn-link:hover {
+            transform: scale(1.05);
+            background-color: #c2185b;
+        }
 /* خلفية القلوب المتحركة */
 .hearts {
     position: fixed;
@@ -217,3 +233,4 @@ button:hover {
     margin: 5px 0;
 
 }
+
